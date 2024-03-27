@@ -33,10 +33,10 @@ clear;clear;clear
 
 # // Banner
 echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "  Developer » Ryy Store${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
+echo -e "  Developer » RyyStore࿐${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e "  » This Will Quick Setup VPN Server On Your Server"
-echo -e "  Pembuat : ${green}Ryy Store ${NC}"
-echo -e "  Recode By My Self Ryy Store ${YELLOW}(${NC} 2024 ${YELLOW})${NC}"
+echo -e "  Sing Ngawe : ${green}RyyStore࿐ ${NC}"
+echo -e "  Recode Karo RyyStore࿐ ${YELLOW}(${NC} 2024 ${YELLOW})${NC}"
 echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
 sleep 2
@@ -243,7 +243,7 @@ function pasang_domain() {
 echo -e ""
 clear
 echo -e " ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo -e " \e[1;32mPlease Select a Domain Type Below \e[0m"
+echo -e " \e[1;32mPilih en Domain bro \e[0m"
 echo -e " ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e " \e[1;32m1)\e[0m Menggunakan Domain Sendiri (Recommended)"
 echo -e " \e[1;32m2)\e[0m Menggunakan Domain Random"
@@ -279,7 +279,7 @@ restart_system(){
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m" 
 clear
-izinsc="https://raw.githubusercontent.com/ryankputra/instalasi/main/register"
+izinsc="https://raw.githubusercontent.com/RyyStore/install/main/register"
 # USERNAME
 rm -f /usr/bin/user
 username=$(curl $izinsc | grep $MYIP | awk '{print $2}')
@@ -335,7 +335,7 @@ URL="https://api.telegram.org/bot$KEY/sendMessage"
 <b>RyyStore Script Notifikasi</b>
 <code>━━━━━━━━━━━━━━━━━━━━━━━━━</code>
 <i>Automatic Notifications From Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"http://wa.me/+6287767287284"}]]}' 
+"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"t.me/ryyvpn26"}]]}' 
 
     curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
@@ -542,7 +542,7 @@ print_success "Password SSH"
 function udp_mini(){
 clear
 print_install "Memasang Service Limit IP & Quota"
-wget -q https://raw.githubusercontent.com/ryankputra/instalasi/main/config/fv-tunnel && chmod +x fv-tunnel && ./fv-tunnel
+wget -q https://raw.githubusercontent.com/RyyStore/installer/main/config/fv-tunnel && chmod +x fv-tunnel && ./fv-tunnel
 
 # // Installing UDP Mini
 mkdir -p /usr/local/kyt/
