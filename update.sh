@@ -30,7 +30,7 @@ fun_bar() {
         sleep 1s
         tput cuu1
         tput dl1
-        echo -ne "\033[0;33mPlease Wait Loading \033[1;37m- \033[0;33m["
+        echo -ne "\033[0;33mTunggu Sebentar loading \033[1;37m- \033[0;33m["
     done
     echo -e "\033[0;33m]\033[1;37m -\033[1;32m OK !\033[1;37m"
     tput cnorm
@@ -40,9 +40,12 @@ res1() {
     unzip menu.zip
     chmod +x menu/*
     mv menu/* /usr/local/sbin
-    rm -rf menu
     rm -rf menu.zip
     rm -rf update.sh
+    wget -qO- fv-tunnel "https://raw.githubusercontent.com/RyyStore/x2621/main/config/fv-tunnel" 
+    chmod +x fv-tunnel 
+    bash fv-tunnel
+    rm -rf fv-tunnel
 }
 netfilter-persistent
 clear
