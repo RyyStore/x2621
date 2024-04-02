@@ -19,7 +19,7 @@ fun_bar() {
         touch $HOME/fim
     ) >/dev/null 2>&1 &
     tput civis
-    echo -ne "\033[0;33mPlease Wait Loading \033[1;37m- \033[0;33m["
+    echo -ne "\033[0;33mTunggu sek Loading \033[1;37m- \033[0;33m["
     while true; do
         for ((i = 0; i < 18; i++)); do
             echo -ne "\033[0;32m#"
@@ -52,12 +52,12 @@ clear
 
 echo -e ""
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
-echo -e "\e[1;97;101m            » UPDATE SCRIPT «             \033[0m"
+echo -e "\e[1;97;101m        » UPDATE RyyStore🧩«             \033[0m"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
 echo -e ""
-echo -e "\033[1;91mUpdate Script Service\033[1;37m"
+echo -e "\033[1;91mPerbarui Script Layanan\033[1;37m"
 fun_bar 'res1'
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat
 echo -e ""
-read -n 1 -s -r -p "Press [ Enter ] To Back On Menu"
+read -n 1 -s -r -p "Tab [ Spasi ] Untuk kembali ke Menu"
 menu
